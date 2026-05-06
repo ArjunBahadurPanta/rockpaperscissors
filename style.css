@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rpsclass {
+  background-color: rgb(25, 25, 025);
+  color: white;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainTitle {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.divbody {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+}
+
+#rock,
+#paper,
+#scissors {
+  border-radius: 50%;
+}
+
+.prsp {
+  text-align: center;
+}
+
+.imageIcon {
+  height: 200px;
+  width: 200px;
+  border: none;
+  border-radius: 50%;
+}
+
+.imageresult {
+
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+#rock,
+#paper,
+#scissors {
+  cursor: pointer;
+}
+
+.js-result {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.psection {
+  font-size: 20px;
+}
+
+#resetButton {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+}
+
+#resetButton:hover {
+  background-color: red;
+  font-weight: bold;
+  color: black;
+  border: none;
+}
+
+.js-moves {
+  display: flex;
+  align-items: center;
+}

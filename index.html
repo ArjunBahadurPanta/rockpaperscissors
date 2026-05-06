@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock paper scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="rpsclass">
+
+  <p class="mainTitle">Rock Paper Scissors</p>
+
+  <section class="divbody">
+    <div>
+      <button id="rock" onclick="playGame('Rock')">
+        <img src="img/rock.png " alt="rock" class="imageIcon">
+      </button>
+      <p class="prsp">Rock</p>
+    </div>
+
+    <div>
+      <button id="paper" onclick="playGame('Paper')">
+        <img src="img/paper.png " alt="paper" class="imageIcon">
+      </button>
+      <p class="prsp">Paper</p>
+    </div>
+
+    <div>
+      <button id="scissors" onclick="playGame('Scissors')">
+        <img src="img/scissors.png " alt="scissors" class="imageIcon">
+      </button>
+      <p class="prsp">Scissors</p>
+    </div>
+  </section>
+
+  <section class="psection">
+    <p class="js-result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score"></p>
+
+    <button id="resetButton" onclick="
+        score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;
+        localStorage.removeItem('score');
+        updateScoreElement();">
+      Reset score
+    </button>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
