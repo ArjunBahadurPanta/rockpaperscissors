@@ -40,9 +40,9 @@ function playGame(playerMove) {
   document.querySelector('.js-result').innerHTML = result;
 
   document.querySelector('.js-moves').innerHTML =
-    `you  &nbsp <img src="img/${playerMove}.png" class="imageresult"> 
+    `you  &nbsp <img src="https://rockpaperscissors-8kc.pages.dev/img//${playerMove}.png" class="imageresult"> 
     &nbsp \u2014 &nbsp
-    <img src="img/${computerMove}.png" class="imageresult"> 
+    <img src="https://rockpaperscissors-8kc.pages.dev/img//${computerMove}.png" class="imageresult"> 
     &nbsp
     Computer`;
 
