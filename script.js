@@ -13,22 +13,22 @@ function playGame(playerMove) {
   if (playerMove === "Rock") {
     if (computerMove === "Rock") result = "Its a Tie! 😒";
     else if (computerMove === "Paper") result = "You Lose! 😭";
-    else result = "You Win!😎";
+    else result = "You Win! 😎";
   } else if (playerMove === "Paper") {
-    if (computerMove === "Rock") result = "You Win!😎";
-    else if (computerMove === "Paper") result = "Its a Tie!😒";
+    if (computerMove === "Rock") result = "You Win! 😎";
+    else if (computerMove === "Paper") result = "Its a Tie! 😒";
     else result = "You Lose! 😭";
   } else if (playerMove === "Scissors") {
     if (computerMove === "Rock") result = "You Lose! 😭";
     else if (computerMove === "Paper") result = "You Win! 😎";
-    else result = "Its a Tie!😒";
+    else result = "Its a Tie! 😒";
   }
 
-  if (result === "You Win!") {
+  if (result === "You Win! 😎") {
     score.wins += 1;
-  } else if (result === "You Lose!") {
+  } else if (result === "You Lose! 😭") {
     score.losses += 1;
-  } else if (result === "Its a Tie!") {
+  } else if (result === "Its a Tie! 😒") {
     score.ties += 1;
   }
 
